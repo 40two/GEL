@@ -23,7 +23,7 @@ Renderer::operator()() const
     { 
     v->draw(*this); 
     }
-	glFlush();  
+  glFlush();  
   }
 
 //! \brief
