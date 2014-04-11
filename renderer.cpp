@@ -1,7 +1,4 @@
 #include "renderer.hpp"
-#include <algorithm>
-
-#include <iostream>
 
 //! \brief
 //! - Default constructor.
@@ -19,10 +16,7 @@ Renderer::operator()() const
   {
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
   glClearColor(_R, _G, _B, _alpha);
-  for(auto const v : _vbos) 
-    { 
-    v->draw(*this); 
-    }
+  // TODO:: Draw VBOs, IBOs etc (i.e., main render loop)
   glFlush();  
   }
 
@@ -33,5 +27,5 @@ Renderer::operator()() const
 void 
 Renderer::operator()(VBO const *v)
   {
-  _vbos.push_back(v);
+  // TODO:: Insert VBO to VBOs' containter.
   }

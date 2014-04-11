@@ -1,12 +1,6 @@
 #ifndef _RENDERER_HPP_
 #define _RENDERER_HPP_
 
-#include <vector>
-
- // don't change the order the header files below
-#include "glew.h"
-#include <GL/freeglut.h>
-
 #include "vbo.hpp"
 
 class Renderer
@@ -27,8 +21,7 @@ class Renderer
     GLfloat _B;
     //!< Background color's alpha value in [0, 1] (0 means total transparent, 1 opaque).
     GLfloat _alpha;
-    //!< TODO
-    std::vector<VBO const*> _vbos;
+    // TODO:: Choose which containers to use to store VBOs and IBOs.
   };
 
 #endif

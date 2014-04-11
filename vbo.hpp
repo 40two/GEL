@@ -3,13 +3,16 @@
 
 class Renderer;
 
-#include "glew.h"   // GLuint, GLenum, GLsizei
+#include "glew.h" // GLuint, GLenum, GLsizei
 
 class VBO
   {
   public:
     //!< Default constructor.
     VBO();
+    
+    // TODO:: Define other constructor with input arguments.
+
     //!< Draws Vertex Buffer Object (VBO).
     void draw(Renderer const &renderer) const;
   private:

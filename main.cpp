@@ -1,5 +1,10 @@
-#include "renderer.hpp"
 #include <memory>        // shared_ptr
+
+// don't change the order the header files below
+#include "glew.h"
+#include <GL/freeglut.h>
+
+#include "renderer.hpp"
 
 //!< Global pointer to Renderer object.
 auto renderer_ptr = std::make_shared<Renderer>(0.0f, 0.3f, 0.4f, 1.0f);

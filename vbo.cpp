@@ -5,7 +5,7 @@
 //! - Default constructor.
 VBO::VBO()
   {
-  // TODO::
+  // TODO:: Initializations and stuff.
   }
 
 //! \brief
