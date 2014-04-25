@@ -14,11 +14,10 @@ auto renderer_ptr = std::make_shared<Renderer>(0.0f, 0.3f, 0.4f, 1.0f);
 //! - Simply calls global function object renderer_ptr.
 //!
 //! \return void.
-void
-display(void)
-  {
-  (*renderer_ptr)();
-  }
+void display(void)
+{
+    (*renderer_ptr)();
+}
 
 //! \brief
 //! - Main function.
