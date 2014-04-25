@@ -29,7 +29,7 @@ display(void)
 //! \return 0 on succeful termination, 1 otherwise.
 int
 main(int argc, char *argv[])
-  {
+{
   glutInit(&argc, argv);
   glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH);
   glutInitWindowSize(512, 512);
@@ -40,4 +40,4 @@ main(int argc, char *argv[])
   glutMainLoop();
 
   return 0;
-  }
+}
